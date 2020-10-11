@@ -1,0 +1,29 @@
+# Django 
+Django==2.2.16
+django-kn-defaults==0.2.9
+djvue==0.1.0
+sentry-sdk==0.17.3
+elastic-apm==5.8.1
+black
+isort
+django-floppyforms
+django-crispy-forms
+psycopg2
+psycopg2-binary
+
+
+
+
+
+
+
+# for windows please add following lib before installing compressor
+# rcssmin==1.0.6 --install-option="--without-c-extensions"
+django-compressor==2.4
+
+
+djangorestframework==3.11.0
+django-environ==0.4.5
+
+
+
