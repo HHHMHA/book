@@ -27,6 +27,9 @@ pre-commit = "==2.6.0"
 docker-compose = "*"
 psycopg2 = "*"
 psycopg2-binary = "*"
+django-braces = "*"
+django = "==2.2.16"
+factory-boy = "*"
 
 [dev-packages]
 

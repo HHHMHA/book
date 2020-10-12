@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "2f948c2dc549e44aaabfba1e4f7e3af611458b8d62b39b3f35d37ddbf9589bc5"
+            "sha256": "439feb84959d21595524b1905ce44d6d332ebc9408d035f9efcd8798970c3a22"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -228,6 +228,14 @@
             ],
             "version": "==1.0.4"
         },
+        "django-braces": {
+            "hashes": [
+                "sha256:83705b78948de00804bfacf40c315d001bb39630f35bbdd8588211c2d5b4d43f",
+                "sha256:a6d9b34cf3e4949635e54884097c30410d7964fc7bec7231445ea7079b8c5722"
+            ],
+            "index": "pypi",
+            "version": "==1.14.0"
+        },
         "django-compressor": {
             "hashes": [
                 "sha256:57ac0a696d061e5fc6fbc55381d2050f353b973fb97eee5593f39247bc0f30af",
@@ -350,6 +358,14 @@
             ],
             "index": "pypi",
             "version": "==5.8.1"
+        },
+        "factory-boy": {
+            "hashes": [
+                "sha256:d8626622550c8ba31392f9e19fdbcef9f139cf1ad643c5923f20490a7b3e2e3d",
+                "sha256:ded73e49135c24bd4d3f45bf1eb168f8d290090f5cf4566b8df3698317dc9c08"
+            ],
+            "index": "pypi",
+            "version": "==3.1.0"
         },
         "faker": {
             "hashes": [

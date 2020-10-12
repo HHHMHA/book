@@ -3,8 +3,8 @@ from django.contrib.auth.models import AnonymousUser
 from django.http.response import Http404
 from django.test import RequestFactory
 
-from user.models import User
-from user.views import (
+from ..models import User
+from ..views import (
     UserRedirectView,
     UserUpdateView,
     UserDetailView,
