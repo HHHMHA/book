@@ -30,6 +30,7 @@ psycopg2-binary = "*"
 django-braces = "*"
 django = "==2.2.16"
 factory-boy = "*"
+python-gettext = "*"
 
 [dev-packages]
 

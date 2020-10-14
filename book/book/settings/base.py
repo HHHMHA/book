@@ -242,7 +242,7 @@ gettext = lambda s: s
 
 LANGUAGES = [
     ("en", gettext("en")),
-
+    ("ar", gettext("ar")),
 ]
 
 # Analytics

@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
+{% load i18n %}
 
-{% block title %} Book Store | Home {% endblock title %}
+{% block title %} {% trans 'Book Store | Home' %} {% endblock title %}
 
 {% block body_class %} container {% endblock body_class %}
 
 {% block content %}
-<h1>Home page don't age</h1>
+<h1>{% trans "Home page don't age" %}</h1>
 {% endblock content %}
