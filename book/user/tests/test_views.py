@@ -3,8 +3,8 @@ from django.contrib.auth.models import AnonymousUser
 from django.http.response import Http404
 from django.test import RequestFactory
 
-from ..models import User
-from ..views import (
+from user.models import User
+from user.views import (
     UserRedirectView,
     UserUpdateView,
     UserDetailView,
@@ -30,7 +30,7 @@ class TestUserUpdateView:
 
         view.request = request
 
-        assert view.get_success_url() == f"/users/{user.username}/"
+        assert view.get_success_url() == f"/en/user/{user.username}/"
 
     def test_get_object(self, user: User, rf: RequestFactory):
         view = UserUpdateView()
@@ -50,7 +50,7 @@ class TestUserRedirectView:
 
         view.request = request
 
-        assert view.get_redirect_url() == f"/users/{user.username}/"
+        assert view.get_redirect_url() == f"/en/user/{user.username}/"
 
 
 class TestUserDetailView:
