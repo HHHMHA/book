@@ -1,9 +1,11 @@
 from django.contrib import messages
 from django.contrib.auth import get_user_model
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 from django.utils.translation import ugettext_lazy as _
-from django.views.generic import DetailView, RedirectView, UpdateView
+from django.views.generic import DetailView, RedirectView, UpdateView, CreateView
+
+from .forms import UserCreationForm
 
 User = get_user_model()
 
@@ -40,3 +42,9 @@ class UserRedirectView(LoginRequiredMixin, RedirectView):
     def get_redirect_url(self):
         return reverse("user:detail", kwargs={"username": self.request.user.username})
 
+
+class SignUpView(CreateView):
+    template_name = 'registration/signup.html'
+    model = User
+    form_class = UserCreationForm
+    success_url = reverse_lazy('home')

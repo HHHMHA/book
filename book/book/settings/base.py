@@ -18,7 +18,7 @@ CONFIG_ROOT = dirname(dirname(abspath(__file__)))
 PROJECT_ROOT = dirname(CONFIG_ROOT)
 
 env = environ.Env()
-READ_DOT_ENV_FILE = env.bool("DJANGO_READ_DOT_ENV_FILE", default=True)
+READ_DOT_ENV_FILE = env.bool("DJANGO_READ_DOT_ENV_FILE", default=False)
 if READ_DOT_ENV_FILE:
     # OS environment variables take precedence over variables from .env
     env.read_env(env_file=join(PROJECT_ROOT, '.env'))
@@ -205,7 +205,8 @@ INSTALLED_APPS = [
 ]
 
 AUTH_USER_MODEL = "user.User"
-LOGIN_REDIRECT_URL = "user:redirect"
+LOGIN_REDIRECT_URL = "home"
+LOGOUT_REDIRECT_URL = "home"
 
 AUTH_PASSWORD_VALIDATORS = [
     {

@@ -3,8 +3,13 @@
 
 {% block title %} {% trans 'Book Store | Home' %} {% endblock title %}
 
-{% block body_class %} container {% endblock body_class %}
-
 {% block content %}
-<h1>{% trans "Home page don't age" %}</h1>
+    <div class="container">
+        <h1>{% trans "Home page don't age" %}</h1>
+        {% if user.is_authenticated %}
+            Hi {{ user.username }}
+        {% else %}
+            <a href="{% url 'login' %}">Login</a>
+        {% endif %}
+    </div>
 {% endblock content %}
